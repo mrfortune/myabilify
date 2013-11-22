@@ -1,0 +1,35 @@
+.container{
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+.navy{
+	color: $navy;
+}
+.blue{
+	color: $blue;
+}
+.light-blue{
+	color: $light-blue;
+}
+.yellow{
+	color: $yellow;
+}
+
+.last-child{
+    margin-right: 0 !important;
+    padding-right: 0 !important;;
+    border-right: none !important;;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}

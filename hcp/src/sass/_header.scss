@@ -1,0 +1,151 @@
+header{
+	background-color: $white;
+	display: block;
+	padding: 3px 0 0 0;
+	.container{
+		position: relative;
+		padding-bottom: 30px;
+	}
+}
+
+h1{
+	display: block;
+	float: left;
+	padding: 0 24px 0 0;
+	border-right: solid 1px $blue;
+	&.tos{
+		width: 133px;
+		height: 129px;
+	}
+	a{
+		display: block;
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.black-box-warning{
+	color: $blue;
+	font-weight: 700;
+	width: 577px;
+	padding: 23px 16px;
+	float: left;
+	a{
+		&:link, &:visited{
+			color: $navy;
+			text-decoration: underline;
+			font-weight: 700;
+		}
+		&:hover, &:active{
+			color: $blue;
+			text-decoration: none;
+		}
+	}
+	p{
+		font-weight: 700;
+		margin: 6px 0;
+	}
+}
+
+.utility{
+	width: 205px;
+	padding: 30px 0 0 7px;
+	border-left: solid 1px $blue;
+	height: 99px;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	ul{
+		font-size: .75em;
+		margin-bottom: 6px;
+		li{
+			display: inline-block;
+			padding-right: 7px;
+			border-right: solid 1px $navy;
+			margin-right: 7px;
+			zoom: 1;
+			*display: inline;
+			a{
+				&:link, &:visited{
+					color: $navy;
+					text-decoration: none;
+				}
+				&:hover, &:active{
+					color: $blue;
+				}
+			}
+		}
+	}
+}
+
+nav{
+	&.main{
+		width: 990px;
+		position: absolute;
+		left: -5px;
+		height: 88px;
+		bottom: -46px;
+		cursor: pointer;
+		z-index: 1;
+		ul{
+			li{
+				width: 117px;
+				border: solid 2px $white;
+				float: left;
+				height: 84px;
+				margin-right: 2px;
+				position: relative;
+				&.last{
+					margin-right: 0;
+				}
+				a{
+					@include transition(background-color);
+					&:link, &:visited{
+						@include submit-gradient;
+						background-color: $blue;
+						display: table-cell;
+						width: 114px;
+						padding: 0 4px;
+						height: 84px;
+						text-align: center;
+						color: white;
+						font-size: .9em;
+						vertical-align: middle;
+						@include futura;
+						font-weight: 500;
+						text-decoration: none;
+					}
+					&:hover{
+						background-color: $navy;
+					}
+				}
+				&.selected a{
+					background-color: $navy;
+				}
+				&.selected:after, &.selected:before {
+					top: 100%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+				}
+				&.selected:after {
+					border-color: rgba(252, 248, 227, 0);
+					border-top-color: $navy;
+					border-width: 15px;
+					margin-left: 43px;
+				}
+				&.selected:before {
+					border-color: rgba(255, 255, 255, 0);
+					border-top-color: $white;
+					border-width: 18px;
+					margin-left: 40px;
+				}
+			}
+		}
+	}
+}
