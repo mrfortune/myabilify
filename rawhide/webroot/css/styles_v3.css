@@ -1,0 +1,670 @@
+@charset "UTF-8";
+/* CSS Document */
+
+img { 
+border: none;
+}
+
+.raw_header{
+	display:block;
+}
+a.noBackgnd,a.noBackgnd:visited{
+	border: none;
+	background:none;	
+	padding-left: 0px;
+	/*color: #4c4c4e;*/
+	background: none;
+	text-decoration: none;
+	border-color: transparent;
+}
+a.noBackgnd:hover,a:noBackgnd:active{
+	border: none;
+	border-color: transparent;
+    background-position: 0px 0px;
+    /*color: #003399;*/
+    background-color: inherit;
+    background-image: none;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.raw_header img.header_img{
+display:block;	
+}
+/*
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    font-weight:400;
+}
+*/
+p {
+    font-family: DeliciousRoman, Helvetica, Arial, sans-serif;
+}
+
+.raw_header{
+display:block;
+width:550px;
+height:61px;
+}
+
+.raw_topCopy{
+display:block;
+width:550px;
+height:61px;
+margin-left:40px;
+margin-bottom:44px;
+margin-top:10px;
+}
+.raw_topCopy img.topCopyImg{
+display:block;	
+}
+.raw_content{
+	position:relative;
+	clear: both;
+	margin-top:100px;
+}
+.raw_content #raw_fl_menu{
+	display:block;
+	width:29px;
+	float: left;
+	position:static;
+	background-color: #fff;
+	left:0px;
+	height: 446px;
+}
+.raw_content #raw_fl_menu ul.rawhide{
+	display:block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li{
+	margin-bottom:1px;
+	float:none;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li a{
+	display:block;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li a.raw_allnewnavBtn{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/allNewNavBtn.jpg);
+	height:120px;
+	width:29px;
+	display:block;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li a.raw_allnewnavBtn:hover{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/allNewNavBtn_hover.jpg);
+	height:120px;
+	width:29px;
+	display:block;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li a.raw_dieselnavBtn{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/advancedDieselbtn.jpg);
+	height:166px;
+	width:29px;
+	display:block;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li a.raw_dieselnavBtn:hover{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/advancedDieselbtn_hover.jpg);
+	height:166px;
+	width:29px;
+	display:block;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li a.raw_activeEnavBtn{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/activeEnavBtn.jpg);
+	height:128px;
+	width:29px;
+	display:block;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li a.raw_activeEnavBtn:hover{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/activeEnavBtn_hover.jpg);
+	height:128px;
+	width:29px;
+	display:block;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li a.raw_arronavBtn{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/arrowbtn.jpg);
+	height:29px;
+	width:29px;
+	display:block;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li a.raw_arronavBtn:hover{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/arrowbtn_hover.jpg);
+	height:29px;
+	width:29px;
+	display:block;
+}
+.raw_content #raw_fl_menu ul.rawhide li.rawhide_li img{
+display:block;	
+}
+
+.raw_socialMedia{
+	display:block;
+	height:34px;
+	width: 540px;
+	float: right;
+	margin-top:72px;
+	margin-right:-27px;
+}
+.raw_socialMedia .raw_likeBtn{
+float:right;	
+position: relative;
+}
+span.raw_connect_widget_not_connected_text{
+	width: 100%;
+}
+.raw_socialMedia .raw_twitter a, .raw_socialMedia a{
+	color:#333;
+	text-decoration:none;
+	font-size:10px;
+}
+
+
+#movie{
+display:none;	
+}
+.raw_socialMedia .raw_twitter{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/twitter.png);
+	float: right;
+	height: 16px;
+	background-repeat:no-repeat;
+	padding-left:20px;
+	margin-right:10px;
+	margin-top: 5px;
+}
+.raw_socialMedia .raw_facebook{
+	/*background-image:url(http://content.bmwusa.com/rawhide_homepage/images/facebook.png); */
+	margin: 3px 0px 0px 120px;
+	/* background-repeat:no-repeat; 
+	padding-left:20px;
+	margin-right:10px;
+	margin-top: 3px; */
+}
+.raw_facebook img.fb_img{
+	display:block;
+}
+.raw_socialMedia iframe{
+float:none;	
+}
+
+.raw_allNew{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/bmw_all_new_x3.png);
+background-repeat:no-repeat;
+height:340px;
+width:952px;
+display:block;
+}
+.raw_allNew .raw_winCopyBlock{
+	width:300px;
+	padding-top: 80px;
+	padding-left: 56px;
+	color:#6e6e6e;
+	display:block;
+}
+.raw_allNew .raw_winCopyBlock img.title_img{
+	display:block;
+}
+.raw_allNew .raw_winCopyBlock p.raw_p_copy{
+	margin-top:18px;
+	margin-bottom:28px;
+}
+.raw_allNew .raw_winCopyBlock a.raw_getstarted{
+	display:block;
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/get_started.png);
+	width:203px;
+	height:33px;
+}
+.raw_allNew .raw_winCopyBlock a.raw_getstarted:hover,
+.raw_allNew .raw_winCopyBlock a.raw_getstarted:active{
+	display:block;
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/get_started_over.png);
+	width:203px;
+	height:33px;
+	padding:0;
+}
+
+.raw_watchAllNew{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/watch_all_new_bg2.png);
+background-repeat:no-repeat;
+height:370px;
+width:953px;
+display:block;
+}
+.raw_watchAllNew img.title_img{
+	display:block;	
+}
+
+.raw_watchAllNew .raw_watchCopyBlock{
+	width:436px;
+	padding-top: 84px;
+	padding-left: 465px;
+	color:#6e6e6e;
+	display:block;
+}
+.raw_watchAllNew .raw_watchCopyBlock a.watchanchor{
+	display:block;
+}
+.raw_watchAllNew .raw_watchCopyBlock p.raw_copy{
+	float:left;
+	width: 196px;
+}
+.raw_watchAllNew .raw_watchCopyBlock p.raw_copy{
+	margin-top:14px;
+	display:block;
+	width: 180px;
+	margin-bottom:28px;
+}
+.raw_watchAllNew .raw_watchCopyBlock p.raw_copy img.watchImg{
+display:block;	
+}
+.raw_watchAllNew .raw_watchCopyBlock p.raw_copy a.raw_experience{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/experience.png);
+width:197px;
+height:27px;
+display:block;
+padding:0;
+}
+.raw_watchAllNew .raw_watchCopyBlock .raw_copy a.raw_experience:hover,
+.raw_watchAllNew .raw_watchCopyBlock .raw_copy a.raw_experience:active{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/experience_over.png);
+	width:197px;
+	height:27px;
+	display:block;
+	padding:0;
+}
+.raw_watchAllNew .raw_watchCopyBlock .raw_watchTvBlock{
+	display:block;
+	float:left;
+	margin-left: 40px;
+	width: 186px;
+	text-align: center;
+}
+.raw_watchAllNew .raw_watchCopyBlock .raw_watchTvBlock {
+	margin-top: 14px;
+}
+.raw_watchAllNew .raw_watchCopyBlock .raw_watchTvBlock a.raw_video1{
+	text-decoration:none;
+	font-size:.8em;
+	padding:0;
+background:none;
+}
+.raw_watchAllNew .raw_watchCopyBlock .raw_watchTvBlock a.raw_watchvid{
+	text-decoration:none;
+	font-size:10px;
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/watch_tv.jpg);
+	background-repeat:no-repeat;
+	height:102px;
+	width:186px;
+	display:block;
+	padding:0;
+}
+.raw_watchAllNew .raw_watchCopyBlock .raw_watchTvBlock a.raw_watchvid:hover,
+.raw_watchAllNew .raw_watchCopyBlock .raw_watchTvBlock a.raw_watchvid:active{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/watch_tv_hover.jpg);
+	height:102px;
+	width:186px;
+	display:block;
+	padding:0;
+}
+.raw_joyRide{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/joyride_bg.png);
+background-repeat:no-repeat;
+height:371px;
+width:369px;
+display:block;
+background-color:#fff;
+}
+
+.raw_trailing{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/trailing.png);
+	height:371px;
+}
+.raw_joyRide .raw_joyRideCopyBlock{
+	padding-left:60px;
+	padding-top:30px;
+}
+.raw_joyRide .raw_joyRideCopyBlock p.raw_p_copy{
+	margin-top:18px;
+	margin-bottom:28px;
+	width:255px;
+}
+.raw_joyRide .raw_joyRideCopyBlock a.raw_gonow{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/go_now.png);
+width:85px;
+height:27px;
+display:block;
+padding:0;
+}
+.raw_joyRide .raw_joyRideCopyBlock a.raw_gonow:hover,
+.raw_joyRide .raw_joyRideCopyBlock a.raw_gonow:active{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/go_now_over.png);
+display:block;
+width:85px;
+height:27px;
+padding:0;
+}
+.raw_mobile{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/iPhone_bg2.png);
+background-repeat:no-repeat;
+height:372px;
+width:584px;
+display:block;
+margin-top:-1px;
+}
+.raw_dieselTop{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/diesel_top.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	width:954px;
+	height:22px;
+	margin-left:1px;
+}
+.raw_mobile .raw_mobileCopyBlock{
+	width:260px;
+	padding-top: 30px;
+}
+.raw_mobile .raw_mobileCopyBlock a.raw_download_iphone{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/download_iphone.png);
+width:191px;
+height:27px;
+display:block;
+padding:0;
+}
+.raw_mobile .raw_mobileCopyBlock a.raw_download_iphone:hover,
+.raw_mobile .raw_mobileCopyBlock a.raw_download_iphone:active{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/download_iphone_over.png);
+	width:191px;
+	height:27px;
+	display:block;
+	padding:0;
+}
+.raw_mobile .raw_mobileCopyBlock a.raw_download_android{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/download_android.png);
+width:200px;
+height:27px;
+display:block;
+padding:0;
+}
+.raw_mobile .raw_mobileCopyBlock a.raw_download_android:hover,
+.raw_mobile .raw_mobileCopyBlock a.raw_download_android:active{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/download_android_over.png);
+	width:200px;
+	height:27px;
+	display:block;
+	padding:0;
+}
+.raw_mobile .raw_mobileCopyBlock p{
+	margin-top:18px;
+	margin-bottom:28px;
+}
+.raw_mobile .raw_mobileCopyBlock img.raw_iPhone_btn{
+margin-bottom:15px;	
+}
+
+.raw_dieselBlock{
+	width:450px;
+	padding-top:72px;
+	padding-left:60px;
+}
+.raw_dieselBlock img{
+	display:block;
+}
+
+p.raw_p_copy{
+	font-size: 14px;
+	font-family: Helvetica;	
+	color: #6e6e6e;
+	font-weight:lighter;
+	line-height:19px;
+}
+
+.raw_dieselClean .raw_dieselBlock .raw_copy{
+	width: 180px;
+	float: left;
+}
+raw_dieselClean img.title_img{
+	display:block;
+}
+.raw_dieselClean .raw_dieselBlock .raw_copy a.raw_dieselBtn{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/explore_diesel.png);
+	width:179px;
+	height:27px;
+	display:block;
+	padding:0;
+}
+.raw_dieselClean .raw_dieselBlock .raw_copy a.raw_dieselBtn:hover,
+.raw_dieselClean .raw_dieselBlock .raw_copy a.raw_dieselBtn:active{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/explore_diesel_over.png);
+	width:179px;
+	height:27px;
+	display:block;
+	padding:0;
+}
+.raw_dieselClean .raw_dieselBlock .raw_copy a.raw_dieselBtnb{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/eplore_x5_diesel.png);
+	width:143px;
+	height:27px;
+	display: block;
+	padding:0;
+}
+.raw_dieselClean .raw_dieselBlock .raw_copy a.raw_dieselBtnb:hover,
+.raw_dieselClean .raw_dieselBlock .raw_copy a.raw_dieselBtnb:active{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/explore_x5_over.png);
+	width:143px;
+	height:27px;
+	display:block;
+	padding:0;
+}
+.raw_dieselClean .raw_dieselBlock .raw_copy p{
+	margin-top:18px;
+	margin-bottom:28px;
+}
+
+.raw_dieselClean .raw_dieselBlock .raw_videoBlock{
+	float:left;
+	margin-left:20px;
+	margin-top:18px;
+}
+.raw_dieselClean .raw_dieselBlock .raw_videoBlock a{
+text-decoration:none;
+text-align:center;
+display:block;
+font-size:.8em;
+padding:0;
+}
+a.raw_dieselVidimg{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/dieselVidImg.jpg);
+width:183px;
+height:100px;
+display:block;
+padding:0;
+}
+a.raw_dieselVidimg:hover{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/dieselVidImg_hover.jpg);
+width:183px;
+height:100px;
+display:block;
+padding:0;
+
+}
+.raw_spartanburg{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/spartanburg.png);
+background-repeat:no-repeat;
+height:361px;
+width:954px;
+display:block;
+padding:0;
+}
+.raw_spartanburg .raw_spartanburgCopyBlk{
+	display:block;
+	padding-top:96px;
+	padding-left:545px;
+}
+.raw_spartanburg img.title_img{
+	display:block;
+}
+.raw_spartanburg .raw_spartanburgCopyBlk p.raw_p_copy{
+	margin-top:18px;
+	margin-bottom:28px;
+	width:272px
+}
+.raw_spartanburg .raw_spartanburgCopyBlk a.raw_seeit{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/see_it.png);
+	display:block;
+	width:151px;
+	height:27px;
+	padding:0;
+}
+.raw_spartanburg .raw_spartanburgCopyBlk a.raw_seeit:hover,
+.raw_spartanburg .raw_spartanburgCopyBlk a.raw_seeit:active{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/see_it_over.png);
+	display:block;
+	width:151px;
+	height:27px;
+	padding:0;
+}
+.raw_spacer{
+height:68px;
+}
+.raw_spacerBottom{
+height:44px;
+background-color:#ececec;
+-moz-box-shadow:1px 1px 3px #d1d1d1;
+ -webkit-box-shadow:1px 1px 3px #d1d1d1;
+ box-shadow:1px 1px 3px #d1d1d1;
+}
+.raw_activeE{
+	-moz-box-shadow:1px 1px 3px #d1d1d1;
+ -webkit-box-shadow:1px 1px 3px #d1d1d1;
+ box-shadow:1px 1px 3px #d1d1d1;
+height:416px;
+border:1px solid #fff;
+background-image:url(../images/activeE_bg.png);
+}
+.raw_activeE .raw_activeEBlk{
+	padding-top:65px;
+	padding-left:58px;
+	width:350px;
+}
+.raw_activeE img.title_img{
+display:block;	
+}
+.raw_activeE .raw_activeEBlk img{
+	display:block;
+}
+.raw_activeE .raw_activeEBlk p{
+	margin-top:18px;
+	margin-bottom:28px;
+	color:#fff;
+	width: 415px;
+}
+.raw_activeE .raw_activeEBlk .raw_activeEVidBlk{
+	width:182px;
+	margin-top: 20px;
+}
+.raw_activeE .raw_activeEBlk .raw_activeEVidBlk a{
+	color:#fff;
+	text-align:center;
+	display:block;
+	text-decoration:none;
+	margin-top:5px;
+	font-size:10px;
+}
+.raw_activeE .raw_activeEBlk .raw_activeEVidBlk a.raw_activeE_vid{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/activeEVideo.jpg);
+	width:182px;
+	height:98px;
+	display:block;
+	padding:0;
+}
+.raw_activeE .raw_activeEBlk .raw_activeEVidBlk a.raw_activeE_vid:hover,
+.raw_activeE .raw_activeEBlk .raw_activeEVidBlk a.raw_activeE_vid:active{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/activeEVideo_hover.jpg);
+	width:182px;
+	height:98px;
+	display:block;
+	padding:0;
+}
+.raw_activeE .raw_activeEBlk a.raw_activeEBtn{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/activeEBtn.png);
+	width:112px;
+	height:26px;
+	display:block;
+	padding:0;
+}
+
+.raw_activeE .raw_activeEBlk a.raw_activeEBtn:hover,
+.raw_activeE .raw_activeEBlk a.raw_activeEBtn:active{
+	background-image:url(http://content.bmwusa.com/rawhide_homepage/images/activeEBtn_hover.png);
+	width:112px;
+	height:26px;
+	display:block;
+	padding:0;
+}
+.raw_dieselClean{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/diesel_bg.png);
+background-position:top;
+background-repeat:no-repeat;
+height:367px;
+}
+
+
+.raw_dieselChanges{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/diesel_changes_bg.png);
+background-position:top;
+background-repeat:no-repeat;
+height:264px;
+}
+.raw_dieselChanges .raw_dieselChangeBlk{
+padding-left:475px;
+padding-top:50px;
+}
+.raw_dieselChanges img.title_img{
+	display:block;
+}
+.raw_dieselChanges .raw_dieselChangeBlk p{
+	margin-top:18px;
+	margin-bottom:28px;
+	width: 412px;
+}
+.raw_dieselChanges .raw_dieselChangeBlk a.raw_advancedBtn{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/experience_diesel.png);
+display:block;
+width:206px;
+height:27px;
+padding:0;
+}
+.raw_dieselChanges .raw_dieselChangeBlk a.raw_advancedBtn:hover,
+.raw_dieselChanges .raw_dieselChangeBlk a.raw_advancedBtn:active{
+background-image:url(http://content.bmwusa.com/rawhide_homepage/images/experience_diesel_over.png);
+display:block;
+width:206px;
+height:27px;
+padding:0;
+}
+.raw_activeElikeBtn{
+	float:right;
+	padding-top:20px;
+	color: #fff;
+}
+.raw_activeElikeBtn p{
+	margin-right:10px;
+	float:left;
+	margin-top:5px;
+	display: block;
+}
+.raw_activeElikeBtn .fb_edge_widget_with_comment .fb_iframe_widget .connect_widget .connect_widget_interactive_area .connect_widget div.connect_confirmation_cell_no_like 
+{
+display:none;	
+}
+
+.raw_activeElikeBtn td.raw_connect_widget_vertical_center{
+	float:right;
+}
+
+#raw_joinUs {
+	float:left; 
+	margin: -1px 0px 0px 5px;
+}

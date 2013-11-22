@@ -1,0 +1,55 @@
+8
+
+dir
+1305
+https://kbspdev.jira.com/svn/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/skins/mvpcf
+https://kbspdev.jira.com/svn
+
+
+
+2011-01-31T20:54:14.760010Z
+1168
+rharris
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e6edf6fb-f266-4316-afb4-e53d95876a76
+
+images
+dir
+
+mw.style.PlayerSkinMvpcf.css
+file
+
+
+
+
+2011-02-03T22:56:50.000000Z
+11139296599e98f91ac1e320ce9604ef
+2011-01-31T20:54:14.760010Z
+1168
+rharris
+
+mw.PlayerSkinMvpcf.js
+file
+
+
+
+
+2011-02-03T22:56:50.000000Z
+adcb923cd0d0f1e75ca82a661be8cf0b
+2011-01-31T20:54:14.760010Z
+1168
+rharris
+

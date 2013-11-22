@@ -1,0 +1,292 @@
+@charset "UTF-8";
+/* CSS Document */
+.header{
+	display:block;
+}
+
+.header .topCopy{
+display:block;
+width:550px;
+height:61px;
+margin-left:40px;
+margin-top:14px;
+}
+.content{
+	position:relative;
+	height:2680px;
+}
+#fl_menu{
+	display:block;
+	width:29px;
+	float: left;
+	position:absolute;
+	background-color: #fff;
+	top:152px;
+	left:0px;
+	height: 446px;
+}
+#fl_menu ul{
+display:block;	
+}
+#fl_menu ul li{
+	margin-bottom:1px;
+	float:none;
+}
+#fl_menu ul li a{
+	display:block;
+}
+#fl_menu ul li img{
+display:block;	
+}
+
+.socialMedia{
+	display:block;
+	height:34px;
+	width: 540px;
+	float: right;
+}
+.socialMedia .likeBtn{
+float:right;	
+}
+.socialMedia .twitter a, .socialMedia .facebook a{
+	color:#333;
+	text-decoration:none;
+	font-size:10px;
+}
+#movie{
+display:none;	
+}
+.socialMedia .twitter{
+	background-image:url(../images/twitter.png);
+	float: right;
+	height: 16px;
+	background-repeat:no-repeat;
+	padding-left:20px;
+	margin-right:10px;
+	margin-top: 5px;
+}
+.socialMedia .facebook{
+	background-image:url(../images/facebook.png);
+	float: right;
+	height: 16px;
+	background-repeat:no-repeat;
+	padding-left:20px;
+	margin-right:10px;
+	margin-top: 5px;
+}
+.socialMedia iframe{
+float:none;	
+}
+
+.allNew{
+background-image:url(../images/bmw_all_new_x3.png);
+background-repeat:no-repeat;
+height:340px;
+width:954px;
+display:block;
+}
+.allNew .winCopyBlock{
+	width:300px;
+	padding-top: 80px;
+	padding-left: 56px;
+	color:#6e6e6e;
+	display:block;
+}
+.allNew .winCopyBlock img{
+	display:block;
+}
+.allNew .winCopyBlock p{
+	margin-top:18px;
+	margin-bottom:28px;
+}
+
+.watchAllNew{
+background-image:url(../images/bmw_active.png);
+background-repeat:no-repeat;
+height:370px;
+width:954px;
+display:block;
+}
+
+.watchAllNew .watchCopyBlock{
+	width:436px;
+	padding-top: 84px;
+	padding-left: 465px;
+	color:#6e6e6e;
+	display:block;
+}
+.watchAllNew .watchCopyBlock .copy{
+	float:left;
+	width: 196px;
+}
+.watchAllNew .watchCopyBlock .copy p{
+	margin-top:14px;
+	display:block;
+	width: 180px;
+	margin-bottom:28px;
+}
+.watchAllNew .watchCopyBlock .copy img{
+display:block;	
+}
+.watchAllNew .watchCopyBlock .watchTvBlock{
+	display:block;
+	float:left;
+	margin-left: 40px;
+	width: 186px;
+	text-align: center;
+}
+.watchAllNew .watchCopyBlock .watchTvBlock img{
+	clear:both;
+	margin-top: 14px;
+}
+.watchAllNew .watchCopyBlock .watchTvBlock a{
+	text-decoration:none;
+	font-size:10px;
+}
+.joyRide{
+background-image:url(../images/joyride_bg.png);
+background-repeat:no-repeat;
+height:371px;
+width:368px;
+display:block;
+}
+.trailing{
+	background-image:url(../images/trailing.png);
+	height:371px;
+}
+.joyRide .joyRideCopyBlock{
+	padding-left:60px;
+	padding-top:30px;
+}
+.joyRide .joyRideCopyBlock p{
+	margin-top:18px;
+	margin-bottom:28px;
+}
+.mobile{
+background-image:url(../images/iphone_bg.png);
+background-repeat:no-repeat;
+height:371px;
+width:586px;
+display:block;
+}
+.dieselTop{
+	background-image:url(../images/diesel_top.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+.mobile .mobileCopyBlock{
+	width:260px;
+	padding-top: 30px;
+}
+.mobile .mobileCopyBlock p{
+	margin-top:18px;
+	margin-bottom:28px;
+}
+.spartanburgCopyBlk{
+display:block;
+padding-top:96px;
+padding-left:545px;
+}
+.spartanburgCopyBlk p{
+	margin-top:18px;
+	margin-bottom:28px;
+	width:250px
+}
+.dieselBlock{
+	width:450px;
+	padding-top:72px;
+	padding-left:60px;
+}
+.dieselBlock img{
+	display:block;
+}
+.dieselClean .dieselBlock .copy{
+	width: 180px;
+	float: left;
+}
+.dieselClean .dieselBlock .copy p{
+margin-top:18px;
+margin-bottom:28px;
+}
+.dieselClean .dieselBlock .videoBlock{
+	float:left;
+	margin-left:20px;
+	margin-top:18px;
+}
+.dieselClean .dieselBlock .videoBlock a{
+text-decoration:none;
+text-align:center;
+display:block;
+font-size:10px;
+}
+.spartanburg{
+background-image:url(../images/spartanburg.png);
+background-repeat:no-repeat;
+height:361px;
+width:954px;
+display:block;
+}
+
+.spacer{
+height:68px;
+background-color:#ececec;
+-moz-box-shadow:1px 1px 3px #d1d1d1;
+ -webkit-box-shadow:1px 1px 3px #d1d1d1;
+ box-shadow:1px 1px 3px #d1d1d1;
+}
+.activeE{
+	-moz-box-shadow:1px 1px 3px #d1d1d1;
+ -webkit-box-shadow:1px 1px 3px #d1d1d1;
+ box-shadow:1px 1px 3px #d1d1d1;
+height:416px;
+border:1px solid #fff;
+background-image:url(../images/activeE_bg.png);
+}
+.activeE .activeEBlk{
+	padding-top:65px;
+	padding-left:58px;
+	width:350px;
+}
+.activeE .activeEBlk img{
+	display:block;
+}
+.activeE .activeEBlk p{
+	margin-top:18px;
+	margin-bottom:28px;
+	color:#fff;
+}
+.activeE .activeEBlk .activeEVidBlk{
+	width:182px;
+	margin-top: 20px;
+}
+.activeE .activeEBlk .activeEVidBlk a{
+	color:#fff;
+	text-align:center;
+	display:block;
+	text-decoration:none;
+	margin-top:5px;
+	font-size:10px;
+}
+.dieselClean{
+background-image:url(../images/diesel_bg.png);
+background-position:top;
+background-repeat:no-repeat;
+height:367px;
+}
+
+
+.dieselChanges{
+background-image:url(../images/diesel_changes_bg.png);
+background-position:top;
+background-repeat:no-repeat;
+height:264px;
+}
+.dieselChanges .dieselChangeBlk{
+padding-left:475px;
+padding-top:50px;
+}
+.dieselChanges .dieselChangeBlk p{
+	margin-top:18px;
+	margin-bottom:28px;
+	width: 370px;
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.raw_content{
+	margin-top:0px;
+	color:#0F0;
+}
+
+#raw_joinUs {
+	margin: 3px 0px 0px 5px;
+}
+
+
+#raw_cboxClose{
+    top: -18px;
+}

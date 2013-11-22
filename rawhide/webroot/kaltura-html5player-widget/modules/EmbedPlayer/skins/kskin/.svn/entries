@@ -1,0 +1,55 @@
+8
+
+dir
+1305
+https://kbspdev.jira.com/svn/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/skins/kskin
+https://kbspdev.jira.com/svn
+
+
+
+2011-01-31T20:54:14.760010Z
+1168
+rharris
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e6edf6fb-f266-4316-afb4-e53d95876a76
+
+images
+dir
+
+mw.style.PlayerSkinKskin.css
+file
+
+
+
+
+2011-02-03T22:56:50.000000Z
+cd228bc0b7cc8c6a3dbcf8f43e2d0588
+2011-01-31T20:54:14.760010Z
+1168
+rharris
+
+mw.PlayerSkinKskin.js
+file
+
+
+
+
+2011-02-03T22:56:50.000000Z
+c6dc5fbc80f41e8723d8a0fe65c51ab7
+2011-01-31T20:54:14.760010Z
+1168
+rharris
+

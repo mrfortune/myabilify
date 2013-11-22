@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<link href="css/grid_v3.css" rel="stylesheet" type="text/css"/>
+<link href="css/styles_v3.css" rel="stylesheet" type="text/css"/>
+<link href="http://content.bmwusa.com/rawhide_homepage/css/typography.css" rel="stylesheet" type="text/css"/>
+<link href="http://content.bmwusa.com/rawhide_homepage/css/colorbox.css" rel="stylesheet" type="text/css"/>
+
+<!--[if IE 7]>
+<link href="css/styles_v3_IE7.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+
+
+<script>
+/* ###############################!!!!!!!!!!!!!!
+ * ALL JAVASCRIPT FILES SHOULD BE HOSTED ON THE SAME SERVER AS THE HTML PAGE 
+ * ###############################!!!!!!!!!!!!!!!
+*/
+</script>
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!--
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type='text/javascript' src='kaltura-html5player-widget/jquery-1.4.2.min.js'></script>
+<script type='text/javascript' src='kaltura-html5player-widget/mwEmbed-player-static.js'></script>
+<link type='text/css' href='kaltura-html5player-widget/mwEmbed-player-static.css' rel='stylesheet'/>
+<style type="text/css">
+@import url("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/flick/jquery-ui.css");
+</style>
+-->
+
+
+  <!-- Include the VideoJS Library -->
+  <script src="js/video-js/video.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    // Must come after the video.js library
+
+    // Setup and store a reference to the player(s).
+    // Must happen after the DOM is loaded
+    // You can use any library's DOM Ready method instead of VideoJS.DOMReady
+
+    /*
+    VideoJS.DOMReady(function(){
+      
+      // Using the video's ID or element
+      var myPlayer = VideoJS.setup("example_video_1");
+      
+      // OR using an array of video elements/IDs
+      // Note: It returns an array of players
+      var myManyPlayers = VideoJS.setup(["example_video_1", "example_video_2", video3Element]);
+
+      // OR all videos on the page
+      var myManyPlayers = VideoJS.setup("All");
+
+      // After you have references to your players you can...(example)
+      myPlayer.play(); // Starts playing the video for this player.
+    });
+    */
+
+    /* ========= SETTING OPTIONS ========= */
+
+    // Set options when setting up the videos. The defaults are shown here.
+
+
+
+  </script>
+
+  <!-- Include the VideoJS Stylesheet -->
+  <link rel="stylesheet" href="http://content.bmwusa.com/rawhide_homepage/js/video-js/video-js.css" type="text/css" media="screen" title="Video JS">
+  <link rel="stylesheet" href="http://content.bmwusa.com/rawhide_homepage/js/video-js/tube.css" type="text/css" >
+
+<script>
+/* ###############################!!!!!!!!!!!!!!
+ * ALL JAVASCRIPT FILES SHOULD BE HOSTED ON THE SAME SERVER AS THE HTML PAGE 
+ * ###############################!!!!!!!!!!!!!!!
+*/
+</script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$(document).bind('cbox_closed', function(){
+		$('div#video').css('display','none');
+	});
+	$(document).bind('cbox_complete', function(){
+		$('#cboxLoadedContent').css('overflow','hidden');
+	});
+	
+});
+
+function fixVideoModalStyle(){
+	$('.video-js-box').css('height',525);
+	$('.video-js-box').css('width',933);
+	$('.video-js-box').css('display','block');
+	$('.video-js-box').css('margin','auto');
+	$('.video-js-box').css('margin-top','10px');
+	$('video').css('height',525);
+
+}
+
+function playVideo1(){
+ // <![CDATA[    // ]]> 
+	if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {        
+		document.location = "http://video-js.zencoder.com/oceans-clip.mp4";    
+	}else{
+		$(".raw_video1").colorbox({width:"950px", height:"555px", inline:true, href:"#video"});
+		$.get('video1.html',function(data){
+			$('div#video').html($(data));	
+			$('div#video').css('display','block');
+			    VideoJS.setupAllWhenReady({
+			      controlsHiding: true, // Hide controls when mouse is not over the video
+			      defaultVolume: 0.55, // Will be overridden by user's last volume if available
+			      flashVersion: 9, // Required flash version for fallback
+			      linksHiding: true // Hide download links when video is supported
+			    });
+
+			fixVideoModalStyle();
+		});
+	}
+}
+function playVideo2(){
+	if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {        
+		document.location = "http://video-js.zencoder.com/oceans-clip.mp4";    
+	}else{
+	$(".raw_video2").colorbox({width:"950px", height:"555px", inline:true, href:"#video"});
+	$.get('video2.html',function(data){
+		$('div#video').html($(data));	
+		$('div#video').css('display','block');
+		    VideoJS.setupAllWhenReady({
+		      controlsHiding: true, // Hide controls when mouse is not over the video
+		      defaultVolume: 0.55, // Will be overridden by user's last volume if available
+		      flashVersion: 9, // Required flash version for fallback
+		      linksHiding: true // Hide download links when video is supported
+		    });
+
+		fixVideoModalStyle();
+	});
+	}
+}
+function playVideo3(){
+	if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {        
+		document.location = "http://video-js.zencoder.com/oceans-clip.mp4";    
+	}else{
+	$(".raw_video3").colorbox({width:"950px", height:"555px", inline:true, href:"#video"});
+	$.get('video3.html',function(data){
+		$('div#video').html($(data));	
+		$('div#video').css('display','block');
+		    VideoJS.setupAllWhenReady({
+		      controlsHiding: true, // Hide controls when mouse is not over the video
+		      defaultVolume: 0.55, // Will be overridden by user's last volume if available
+		      flashVersion: 9, // Required flash version for fallback
+		      linksHiding: true // Hide download links when video is supported
+		    });
+		fixVideoModalStyle();
+	});
+	}
+}
+
+
+var ss = {
+  fixAllLinks: function() {
+    // Get a list of all links in the page
+    var allLinks = document.getElementsByTagName('a');
+    // Walk through the list
+    for (var i=0;i<allLinks.length;i++) {
+      var lnk = allLinks[i];
+      if ((lnk.href && lnk.href.indexOf('#') != -1) && 
+          ( (lnk.pathname == location.pathname) ||
+	    ('/'+lnk.pathname == location.pathname) ) && 
+          (lnk.search == location.search)) {
+        // If the link is internal to the page (begins in #)
+        // then attach the smoothScroll function as an onclick
+        // event handler
+        ss.addEvent(lnk,'click',ss.smoothScroll);
+      }
+    }
+  },
+
+  smoothScroll: function(e) {
+    // This is an event handler; get the clicked on element,
+    // in a cross-browser fashion
+    if (window.event) {
+      target = window.event.srcElement;
+    } else if (e) {
+      target = e.target;
+    } else return;
+
+    // Make sure that the target is an element, not a text node
+    // within an element
+    if (target.nodeName.toLowerCase() != 'a') {
+      target = target.parentNode;
+    }
+  
+    // Paranoia; check this is an A tag
+    if (target.nodeName.toLowerCase() != 'a') return;
+  
+    // Find the <a name> tag corresponding to this href
+    // First strip off the hash (first character)
+    anchor = target.hash.substr(1);
+    // Now loop all A tags until we find one with that name
+    var allLinks = document.getElementsByTagName('a');
+    var destinationLink = null;
+    for (var i=0;i<allLinks.length;i++) {
+      var lnk = allLinks[i];
+      if (lnk.name && (lnk.name == anchor)) {
+        destinationLink = lnk;
+        break;
+      }
+    }
+    if (!destinationLink) destinationLink = document.getElementById(anchor);
+
+    // If we didn't find a destination, give up and let the browser do
+    // its thing
+    if (!destinationLink) return true;
+  
+    // Find the destination's position
+    var destx = destinationLink.offsetLeft; 
+    var desty = destinationLink.offsetTop;
+    var thisNode = destinationLink;
+    while (thisNode.offsetParent && 
+          (thisNode.offsetParent != document.body)) {
+      thisNode = thisNode.offsetParent;
+      destx += thisNode.offsetLeft;
+      desty += thisNode.offsetTop;
+    }
+  
+    // Stop any current scrolling
+    clearInterval(ss.INTERVAL);
+  
+    cypos = ss.getCurrentYPos();
+  
+    ss_stepsize = parseInt((desty-cypos)/ss.STEPS);
+    ss.INTERVAL =
+setInterval('ss.scrollWindow('+ss_stepsize+','+desty+',"'+anchor+'")',10);
+  
+    // And stop the actual click happening
+    if (window.event) {
+      window.event.cancelBubble = true;
+      window.event.returnValue = false;
+    }
+    if (e && e.preventDefault && e.stopPropagation) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  },
+
+  scrollWindow: function(scramount,dest,anchor) {
+    wascypos = ss.getCurrentYPos();
+    isAbove = (wascypos < dest);
+    window.scrollTo(0,wascypos + scramount);
+    iscypos = ss.getCurrentYPos();
+    isAboveNow = (iscypos < dest);
+    if ((isAbove != isAboveNow) || (wascypos == iscypos)) {
+      // if we've just scrolled past the destination, or
+      // we haven't moved from the last scroll (i.e., we're at the
+      // bottom of the page) then scroll exactly to the link
+      window.scrollTo(0,dest);
+      // cancel the repeating timer
+      clearInterval(ss.INTERVAL);
+      // and jump to the link directly so the URL's right
+      location.hash = anchor;
+    }
+  },
+
+  getCurrentYPos: function() {
+    if (document.body && document.body.scrollTop)
+      return document.body.scrollTop;
+    if (document.documentElement && document.documentElement.scrollTop)
+      return document.documentElement.scrollTop;
+    if (window.pageYOffset)
+      return window.pageYOffset;
+    return 0;
+  },
+
+  addEvent: function(elm, evType, fn, useCapture) {
+    // addEvent and removeEvent
+    // cross-browser event handling for IE5+,  NS6 and Mozilla
+    // By Scott Andrew
+    if (elm.addEventListener){
+      elm.addEventListener(evType, fn, useCapture);
+      return true;
+    } else if (elm.attachEvent){
+      var r = elm.attachEvent("on"+evType, fn);
+      return r;
+    } else {
+      alert("Handler could not be removed");
+    }
+  } 
+}
+
+ss.STEPS = 25;
+
+ss.addEvent(window,"load",ss.fixAllLinks);
+
+</script>
+
+<script src="js/jquery.colorbox.js"></script>
+<script>
+</script>	
+<style type="text/css" media="screen">
+    
+    
+    #vid1 {
+      -webkit-box-shadow: 0 0 20px #000;
+      -moz-box-shadow: 0 0 20px #000;
+      width: 900px;
+      height: 500px;
+      overflow: none;
+      margin: 5% auto;
+    }
+  </style>
+<title>BMW USA</title>
+
+</head>
+
+<body>
+<a name="allnew" class="noBackgnd"></a>
+ 
+<div class="raw_container clearfix">
+<div class="raw_header"> <a name="top" class="noBackgnd"><img src="http://content.bmwusa.com/rawhide_homepage/images/consider_heading.png" width="961" height="40" alt="Consider The Game Changed Again" class="header_img"/></a>
+<div class="raw_topCopy">
+  <img src="http://content.bmwusa.com/rawhide_homepage/images/topCopy.png" alt="" width="550" height="64" class="topCopyImg"/></div>  
+</div>
+<div class="raw_span-10 raw_last">
+<div class="raw_socialMedia clearfix">
+	<div class="raw_facebook" style="background-image:none;">
+
+</div>
+
+
+
+
+</div>
+</div>
+<div class="raw_content clearfix">
+<div class="raw_span-1">
+
+
+<div id="raw_fl_menu">
+<ul class="rawhide">
+<li class="rawhide_li"><a href="#allnew" title="The All New BMW X3" class="raw_allnewnavBtn"></a></li>
+  <li class="rawhide_li"><a href="#diesel" title="BMW Advanced Diesel" class="raw_dieselnavBtn"></a></li>
+  <li class="rawhide_li"><a href="#activeE" title="The BMW ActiveE" class="raw_activeEnavBtn"></a></li>
+  <li class="rawhide_li"><a href="#top" class="raw_arronavBtn"></a></li>
+
+</ul>
+</div>
+</div>
+<div class="raw_span-6 raw_last raw_borderTop">
+	<div class="raw_allNew">
+    	<div class="raw_winCopyBlock">
+    <img src="http://content.bmwusa.com/rawhide_homepage/images/win_x3.png" width="296" height="25" alt="Win All New X3" class="title_img"/>
+  		<p class="raw_p_copy">This February, the Ultimate X3 Experience could be yours. Enter to win by building the all-new X3 that appeared in our commercial during football&#x2019;s epic game. 
+</p>
+  		<a href="http://www.facebook.com/BMWUSA?v=app_174746902561813" class="raw_getstarted" target="_blank">
+        </a>
+
+      	</div>
+     </div>
+
+	<div class="raw_watchAllNew">
+    	<div class="raw_watchCopyBlock"> <a href="#" class="noBackgnd"><img src="http://content.bmwusa.com/rawhide_homepage/images/watch_x3.jpg" width="412" height="55" alt="Watch X3 Defy Logic"  class="title_img"/></a>
+        <div class="raw_copy">
+        <p class="raw_p_copy">Does it make sense that a small town in South Carolina is the birthplace of every BMW X3 in the world? It makes perfect sense.   
+        </p>
+        <a href="http://www.bmwusa.com/standard/content/vehicles/2011/x3/x3savexplore.aspx" class="raw_experience" target="_blank"></a>
+
+        </div>
+        
+        <div class="raw_watchTvBlock"><a title="Watch the X3 Defy Logic" href="#" onClick="javascript:playVideo1();" class="raw_video1 raw_watchvid"></a><a href="#" class="raw_video1" onClick="javascript:playVideo1();">Watch the TV Commercial</a></div>
+        </div>
+    </div>
+    </div>
+    
+<div class="raw_span-2 raw_last"><div class="raw_joyRide"><div class="raw_joyRideCopyBlock"><img src="http://content.bmwusa.com/rawhide_homepage/images/take_joyride.png" width="248" height="54" alt="Take an X3 Joyride" /><p class="raw_p_copy" style="width:270px;">Take the all-new X3 for a test drive through your favorite websites and see where endless possibilities can take you. </p>
+      <a href="http://www.bmwusa.com/standard/content/vehicles/2011/x3/x3savexplore.aspx#drive-it/" class="raw_gonow"></a></div></div></div>
+<div class="raw_span-3 last raw_borderRight"><div class="raw_mobile"><div class="raw_mobileCopyBlock"><img src="http://content.bmwusa.com/rawhide_homepage/images/driveway.png" width="253" height="54" alt="See The " /><p class="raw_p_copy">Take a picture with your phone and see how the all-new X3 will look in your driveway, or anywhere else you choose.</p>
+
+      <a href="#" class="raw_download_iphone"></a><br />
+      <!--<a href="#" class="raw_download_android"></a>--></div></div></div>      
+<div class="raw_span-6 raw_last raw_borderBottom"><div class="raw_spartanburg"><div class="raw_spartanburgCopyBlk"><img src="http://content.bmwusa.com/rawhide_homepage/images/made_in_spartanburg.png" width="362" height="25" alt="Made in Spartanburg" class="title_img"/><p class="raw_p_copy">Spartanburg, South Carolina: the birthplace of every X3 around the world.</p>
+      <a href="http://www.bmwusa.com/standard/content/vehicles/2011/x3/x3savexplore.aspx#build-it/" class="raw_seeit"><!--<img src="images/see_it.png" width="151" height="27" alt="See it come to life" />--></a></div></div></div> 
+           
+<div class="raw_span-6 raw_last raw_noborder"><a name="diesel" class="noBackgnd"></a><div class="raw_spacer raw_dieselTop"></div></div> 
+<div class="raw_span-6 raw_last"><div class="raw_dieselClean">
+	<div class="raw_dieselBlock clearfix">
+    <img src="http://content.bmwusa.com/rawhide_homepage/images/diesel_head.png" width="215" height="55" alt="Clean.Powerful.Quiet." class="title_img"/><div class="raw_copy">
+  <p class="raw_p_copy">BMW Advanced Diesel is changing the way the world looks at diesel technology. Starting with the 335d and the X5 xDrive35d.</p>
+
+  <a href="http://www.bmwusa.com/standard/content/vehicles/2011/3/335dsedan/default.aspx" class="raw_dieselBtn"></a><br />
+  <a href="http://www.bmwusa.com/standard/content/vehicles/2011/x5/xdrive35d/default.aspx" class="raw_dieselBtnb"></a>
+    </div>
+<div class="raw_videoBlock"><a href="#" onClick="javascript:playVideo2();" class="raw_video2 raw_dieselVidimg"></a><a href="#" class="raw_video2" onClick="javascript:playVideo2();" style="position:absolute;margin:5px 0px 0px 27px;">Watch the TV Commercial</a></div>
+  </div></div></div>
+  
+<div class="raw_span-6 raw_last raw_borderBottom"><div class="raw_dieselChanges"><div class="raw_dieselChangeBlk"><img src="http://content.bmwusa.com/rawhide_homepage/images/how_diesel_changes.png" width="418" height="24" alt="How Diesel Changes You" class="title_img"/><p class="raw_p_copy">BMW&#x2019;s diesel models are like no others in the world. They reduce the cost of fuel, lower emissions, and more. Calculate the impact Advanced Diesel could have on you.</p>
+      <a href="http://www.bmwusa.com/Standard/Content/Uniquely/BMWEfficientDynamics/ExploreAdvancedDiesel.aspx" class="raw_advancedBtn"></a></div></div></div> 
+<div class="raw_span-6 raw_last raw_noborder"><div class="raw_spacer"></div></div>      
+<div class="raw_span-6 raw_last"><div class="raw_activeE"><div class="raw_activeElikeBtn"><p></p>
+			<fb:like href="http://www.bmwusa.com" layout="button_count" show_faces="false" width="100" font="verdana"></fb:like></div>
+
+<div class="raw_activeEBlk">
+<a name="activeE" class="noBackgnd"><img src="http://content.bmwusa.com/rawhide_homepage/images/activeEHeader.png" width="187" height="24" alt="BMW ActiveE" class="title_img"/></a><p class="raw_p_copy" style="width:375px;">Introducing the all-electric ActiveE. Zero emissions and pure driving exhilaration are on a mission to define the future of mobility. And it all starts with &#x201C;Wherever You Want to Go,&#x201D; four films presented by BMW Documentaries at BMWActivatetheFuture.com. </p>
+      <a href="http://www.bmwactivatethefuture.com" class="activeEBtn" target="_blank"></a>
+  <div class="raw_activeEVidBlk"><a href="#" onClick="javascript:playVideo3();" class="raw_video3 raw_activeE_vid"></a><a href="#" class="raw_video3" onClick="javascript:playVideo3();">Watch the Trailer Now</a></div>
+  </div>
+  </div></div>            
+</div>
+
+</div>
+
+<div  id="video" style="display: none;"></div>
+
+
+		
+
+		
+<script language="javascript1.5" type="text/javascript">
+$.fn.stickyfloat = function(options, lockBottom) {
+				var $obj 				= this;
+				var parentPaddingTop 	= parseInt($obj.parent().css('padding-top'));
+				var startOffset 		= $obj.parent().offset().top;
+				var opts 				= $.extend({ startOffset: startOffset, offsetY: parentPaddingTop, duration: 200, lockBottom:true }, options);
+				
+				$obj.css({ position: 'absolute' });
+				
+				if(opts.lockBottom){
+					var bottomPos = $obj.parent().height() - $obj.height() + parentPaddingTop; //get the maximum scrollTop value
+					if( bottomPos < 0 )
+						bottomPos = 0;
+				}
+				
+				$(window).scroll(function () { 
+					$obj.stop(); // stop all calculations on scroll event
+
+					var pastStartOffset			= $(document).scrollTop() > opts.startOffset;	// check if the window was scrolled down more than the start offset declared.
+					var objFartherThanTopPos	= $obj.offset().top > startOffset;	// check if the object is at it's top position (starting point)
+					var objBiggerThanWindow 	= $obj.outerHeight() < $(window).height();	// if the window size is smaller than the Obj size, then do not animate.
+					
+					// if window scrolled down more than startOffset OR obj position is greater than
+					// the top position possible (+ offsetY) AND window size must be bigger than Obj size
+					if( (pastStartOffset || objFartherThanTopPos) && objBiggerThanWindow ){ 
+						var newpos = ($(document).scrollTop() -startOffset + opts.offsetY );
+						if ( newpos > bottomPos )
+							newpos = bottomPos;
+						if ( $(document).scrollTop() < opts.startOffset ) // if window scrolled < starting offset, then reset Obj position (opts.offsetY);
+							newpos = parentPaddingTop;
+			
+						$obj.animate({ top: newpos }, opts.duration );
+					}
+				});
+			};
+
+			$('#raw_fl_menu').stickyfloat({ duration: 400 });
+</script>
+</body>
+</html>
+ 

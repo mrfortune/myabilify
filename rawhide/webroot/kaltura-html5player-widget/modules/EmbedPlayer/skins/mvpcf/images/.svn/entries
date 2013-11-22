@@ -1,0 +1,41 @@
+8
+
+dir
+1305
+https://kbspdev.jira.com/svn/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/skins/mvpcf/images
+https://kbspdev.jira.com/svn
+
+
+
+2011-01-31T20:54:14.760010Z
+1168
+rharris
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e6edf6fb-f266-4316-afb4-e53d95876a76
+
+player_big_play_button.png
+file
+
+
+
+
+2011-02-03T22:56:50.000000Z
+4fe347e577b962186bc1e377249bf789
+2011-01-31T20:54:14.760010Z
+1168
+rharris
+has-props
+

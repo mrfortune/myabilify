@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1168/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer
+END
+loader.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1168/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/loader.js
+END
+mw.EmbedPlayerGeneric.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1168/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/mw.EmbedPlayerGeneric.js
+END
+mw.EmbedPlayer.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1168/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/mw.EmbedPlayer.js
+END
+mw.EmbedPlayerJava.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1168/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/mw.EmbedPlayerJava.js
+END
+mw.EmbedPlayerHtml.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1168/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/mw.EmbedPlayerHtml.js
+END
+mw.EmbedPlayerVlc.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1168/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/mw.EmbedPlayerVlc.js
+END
+mw.EmbedPlayerNative.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1168/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/mw.EmbedPlayerNative.js
+END
+mw.EmbedPlayerKplayer.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1168/BMWRAWHIDE/trunk/webroot/kaltura-html5player-widget/modules/EmbedPlayer/mw.EmbedPlayerKplayer.js
+END
